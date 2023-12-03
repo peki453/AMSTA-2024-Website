@@ -1,0 +1,373 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+.header {
+    background: url('../img/bg.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-content {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header-content p.big {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header-content p.small {
+    font-size: 20px;
+    text-align: center;
+}
+
+.header-submit {
+    border: none;
+    background-color: #40BA21;
+    outline: none;
+    border-radius: 50px;
+    padding: 10px 28px;
+    font-size: 22px;
+    color: #FFF;
+    margin-top: 36px;
+    cursor: pointer;
+    transition: transform .2s;
+    text-decoration: none;
+}
+
+.header-submit:hover {
+    transform: scale(1.05);
+}
+
+.hr {
+    background-color: #40BA21;
+    width: 280px;
+    height: 4px;
+    border-radius: 10px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.down {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 999;
+    width: fit-content;
+}
+
+.down img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Main */
+
+main {
+    padding: 40px 20%;
+}
+
+.before-title {
+    color: #666;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 36px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 32px;
+}
+
+h3 span {
+    color: #999;
+    font-weight: normal;
+}
+
+.sub-hr {
+    background-color: #40BA21;
+    width: 150px;
+    height: 2px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.person {
+    border-left: 3px solid #CCC;
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
+.name {
+    font-size: 16px;
+    color: #666;
+}
+
+.position {
+    font-size: 14px;
+    color: #999;
+}
+
+.text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.topic {
+    font-size: 16px;
+    border-left: 3px solid #CCC;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    color: #666;
+}
+
+/* Deadlines */
+
+.deadlines {
+    background-color: #F3F3F3;
+    padding: 40px 20%;
+}
+
+.deadline {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.date {
+    background-color: #40BA21;
+    color: #FFF;
+    width: 140px;
+    padding: 4px 10px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.d-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Submission */
+
+.submission-section {
+    padding: 60px 20%;
+    background-color: #40BA21;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-title {
+    font-size: 28px;
+    color: #FFF;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.submission-section a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.main-submit {
+    border: none;
+    color: #40BA21;
+    outline: none;
+    border-radius: 50px;
+    padding: 10px 28px;
+    font-size: 22px;
+    background-color: #FFF;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.main-submit:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+
+.contact-section {
+    padding: 40px 20% 60px 20%;
+    background-color: #12152a;
+}
+
+.contact {
+    border-left: 3px solid #42455a;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.contact-right {
+    border-right: 3px solid #42455a;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: right;
+    
+}
+
+.c-name {
+    font-size: 18px;
+    color: #FFF;
+}
+
+.c-position {
+    font-size: 13px;
+    color: #999;
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+
+.c-email {
+    color: #40BA21;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1150px) {
+    main {
+        padding: 40px 5%;
+    }
+    .deadlines {
+        padding: 40px 5%;
+    }
+    .submission-section {
+        padding: 60px 5%;
+    }
+    .contact-section {
+        padding: 40px 5% 60px 5%;
+    }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+    .header-content h1 {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+    .header-content p.big {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 6px;
+    }
+    .header-content p.small {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    main {
+        padding: 40px 5%;
+    }
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .deadlines {
+        padding: 40px 5%;
+    }
+    .date {
+        color: #40BA21;
+        background-color: transparent;
+        width: fit-content;
+        padding: 4px 0px;
+        text-align: left;
+        border-radius: 0;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.02em;
+    }
+    .deadline {
+        display: block;
+    }
+    .submission-section {
+        padding: 40px 5%;
+    }
+    .contact-section {
+        padding: 40px 5% 60px 5%;
+    }
+    .submission-section {
+        display: block;
+        text-align: center;
+    }
+    .sub-title {
+        text-align: center;
+    }
+    .submission-section a {
+        text-align: center;
+        line-height: 1.2;
+        font-size: 14px;
+    }
+    .main-submit {
+        margin-top: 24px;
+    }
+    .contact {
+        border-left: 3px solid #42455a;
+        padding-left: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .contact-right {
+        border: none;
+        padding: 0;
+        border-left: 3px solid #42455a;
+        padding-left: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-align: left;
+        margin-top: 24px;
+    }
+}
